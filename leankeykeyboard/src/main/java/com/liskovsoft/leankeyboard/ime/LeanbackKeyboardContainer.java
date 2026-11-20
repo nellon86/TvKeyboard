@@ -728,7 +728,9 @@ public class LeanbackKeyboardContainer {
 
     public void updateCyclicFocus(int dir, KeyFocus oldFocus, KeyFocus newFocus) {
         if (oldFocus.equals(newFocus) || LeanbackUtils.isSubmitButton(newFocus)) {
-            if (LeanKeyPreferences.instance(mContext).isCyclicNavigationEnabled()) {
+            // left/right always wrap around a row, the setting only adds up/down wrapping
+            boolean cyclicVertical = LeanKeyPreferences.instance(mContext).isCyclicNavigationEnabled();
+            if (dir == DIRECTION_RIGHT || dir == DIRECTION_LEFT || cyclicVertical) {
                 if (dir == DIRECTION_RIGHT || dir == DIRECTION_LEFT) {
                     Rect actionRect = new Rect();
                     offsetRect(actionRect, mActionButtonView);

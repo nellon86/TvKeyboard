@@ -60,5 +60,5 @@
     <string name="show_launcher_icon">Show icon</string>
     <string name="show_launcher_icon_desc">Show launcher icon</string>
     <string name="enable_cyclic_navigation">Сyclic navigation</string>
-    <string name="enable_cyclic_navigation_desc">Сyclic navigation through keyboard</string>
+    <string name="enable_cyclic_navigation_desc">Also wrap up and down (left and right always wrap)</string>
 </resources>
