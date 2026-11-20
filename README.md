@@ -11,6 +11,7 @@ A modified version of [LeanKeyboard](https://github.com/yuliskov/LeanKeyboard) b
    * Next moves the cursor to the end of the text.
  * **Material design**: rounded key caps, accent-filled focused key, regular-weight letters, vector icons, `?123` / `ABC` mode keys, pill-shaped Enter button.
  * **Compact panel**: the keyboard sits in a rounded panel centred at the bottom of the screen instead of a full-width background.
+ * **Row wraparound**: pressing right on the last key of a row jumps back to its first key, and left on the first key jumps to the last. Up/down wrapping can be turned on with the *Cyclic navigation* setting.
 
 ### Build
 ```
